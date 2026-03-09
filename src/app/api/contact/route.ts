@@ -18,7 +18,7 @@ export async function POST(request: Request) {
     const { data, error } = await resend.emails.send({
       from: 'Bramble & Branch <onboarding@resend.dev>',
       to: 'kerithhopper@gmail.com',
-      replyTo: email,
+      reply_to: email,
       subject: `[Bramble & Branch] ${inquiryType || 'General'} inquiry from ${name}`,
       html: `
         <div style="font-family: Georgia, 'Times New Roman', serif; max-width: 600px; margin: 0 auto; color: #2e2a25;">
