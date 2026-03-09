@@ -2,23 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
 
 :root {
-  --color-cream: #faf8f5;
-  --color-bark: #2c2418;
-  --color-sage-500: #768063;
-  --color-clay-500: #d08362;
+  --color-cream: #faf8f4;
+  --color-charcoal: #2e2a25;
+  --color-bark: #3d3528;
+  --color-sage-500: #71805c;
+  --color-sienna-500: #d47137;
+  --color-blush: #ecddd4;
+  --color-candle: #d4a94e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'DM Sans', system-ui, sans-serif;
   background-color: var(--color-cream);
-  color: var(--color-bark);
+  color: var(--color-charcoal);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+}
+
+::selection {
+  background-color: #ecddd4;
+  color: #2e2a25;
 }
