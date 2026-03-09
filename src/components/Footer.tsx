@@ -34,9 +34,9 @@ export default function Footer() {
             <div className="flex flex-col gap-2 text-sm text-stone-400">
               <p>Kerith Hopper, LCSW</p>
               <p>Memphis, Tennessee</p>
-              <a href="mailto:kerithhopper@gmail.com" className="hover:text-cream transition-colors">
-                kerithhopper@gmail.com
-              </a>
+              <Link href="/contact" className="hover:text-cream transition-colors">
+                Get in touch
+              </Link>
             </div>
           </div>
         </div>
