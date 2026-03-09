@@ -18,7 +18,7 @@ export async function POST(request: Request) {
 
     const { data, error } = await resend.emails.send({
       from: 'Bramble & Branch <onboarding@resend.dev>',
-      to: 'glenn@boxofstars.com',
+      to: 'glenn.hopper.iii@gmail.com',
       reply_to: email,
       subject: `[Bramble & Branch] ${inquiryType || 'General'} inquiry from ${name}`,
       html: `
